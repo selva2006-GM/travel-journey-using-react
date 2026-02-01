@@ -1,3 +1,4 @@
+import locImg from '../Data/placeholder.png'
 export default function Card(props){
     return (
         <div className="card">
@@ -9,7 +10,7 @@ export default function Card(props){
             <div className="card-content">
                 <span>
 
-                <img className="marker" src="./location.png" alt="map marker icon" />
+                <img className="marker" src={locImg} alt="map marker icon" />
                 <span>{props.country}  </span>
                 <a href={props.googleMapsLink}>View on Google Map</a>
                 </span>
