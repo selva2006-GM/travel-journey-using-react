@@ -10,7 +10,7 @@ export default function Card(props){
             <div className="card-content">
                 <span>
 
-                <img className="marker" src={locImg} alt="map marker icon" />
+                <img loading='lazy' className="marker" src={locImg} alt="map marker icon" />
                 <span>{props.country}  </span>
                 <a href={props.googleMapsLink}>View on Google Map</a>
                 </span>
