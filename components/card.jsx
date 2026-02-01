@@ -1,4 +1,4 @@
-import location from "../Data/placeholder.png"
+const location  = "./placeholder-DjklXPkM.png"
 
 export default function Card(props){
     return (
