@@ -26,7 +26,7 @@ export default [
     {
         id: 3,
         img: {
-            src: "https://images.unsplash.com/photo-1529669851567-57c2b6e3a2f8",
+            src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
             alt: "Geirangerfjord"
         },
         title: "Geirangerfjord",
@@ -98,7 +98,7 @@ export default [
     {
         id: 9,
         img: {
-            src: "https://images.unsplash.com/photo-1585506936724-fa0c19c7b696",
+            src: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d",
             alt: "Great Wall of China"
         },
         title: "Great Wall of China",
@@ -146,7 +146,7 @@ export default [
     {
         id: 13,
         img: {
-            src: "https://images.unsplash.com/photo-1506970845872-504d6b2d49e8",
+            src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
             alt: "Grand Canyon"
         },
         title: "Grand Canyon",
