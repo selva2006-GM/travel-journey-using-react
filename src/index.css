@@ -1,17 +1,17 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-#root{
+#root {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border: 6px solid white;
-  border-radius: 40%;
+  border-radius: 16px;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,53 +21,38 @@
   gap: 10px;
   font-family: "Epilogue", sans-serif;
   color: white;
-  border-radius: 10px 10px 0px 0px ;
-
+  border-radius: 10px 10px 0 0;
 }
 
-.container{
-  width: 100%;
+.container {
   padding: 5%;
 }
 
-.card{
+.card {
   display: flex;
   align-items: flex-start;
-  margin: 40px;
   gap: 20px;
+  margin: 40px 0;
 }
 
-.card a{
-  text-decoration: none;
-  color: rgb(125, 125, 125);
-}
-
-.main-image_container{
+.main-image_container {
   width: 125px;
   height: 168px;
   overflow: hidden;
-  border-radius: 5px;
-  flex-shrink: 0;
-  margin-right: 19px;
-  object-fit: cover;
-}
-
-.main_image{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
-
-.marker{
-  width: 7px;
-  margin-right: 4px;
+.main_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-content h2 {
@@ -77,4 +62,38 @@
 .card-content p {
   margin: 4px 0;
   line-height: 1.5;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(125, 125, 125);
+}
+
+.marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .main-image_container {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3 / 2;
+    height: auto;
+  }
+
+  .card-content {
+    align-items: center;
+  }
+
+  .card-content p {
+    max-width: 90%;
+  }
 }
